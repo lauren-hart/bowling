@@ -1,0 +1,14 @@
+{
+  "name": "bowling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lauren-hart/bowling.git",
+  "author": "lauren-hart <laurenannehart@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "scripts": {
+  "test": "jest"   
+  }
+}
