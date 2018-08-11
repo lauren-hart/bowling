@@ -40,7 +40,7 @@ test('scores a spare', function() {
     const nextFrame = [3, 4]
     const expected = 13
     //act
-    const actual = game.scoreFrame(frame, nextFrame)
+    const actual = game.scoreSpare(frame, nextFrame)
     //assert
     expect(actual).toBe(expected)
 })
@@ -53,7 +53,7 @@ test('scores a strike', function() {
     const nextFrame = [3, 4]
     const expected = 17
     //act
-    const actual = game.scoreFrame(frame, nextFrame)
+    const actual = game.scoreStrike(frame, nextFrame)
     //assert
     expect(actual).toBe(expected)
 })
@@ -67,7 +67,7 @@ test('scores a double strike', function() {
     const thirdFrame = [5, 2]
     const expected = 25
     //act
-    const actual = game.scoreFrame(frame, nextFrame, thirdFrame) 
+    const actual = game.scoreDoubleStrike(frame, nextFrame, thirdFrame) 
     //assert
     expect(actual).toBe(expected)
 })
