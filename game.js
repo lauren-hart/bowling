@@ -5,10 +5,8 @@ module.exports = {
     scoreDoubleStrike,
     scoreGame
 }
+   
 
-const gameScore = 0
-
- 
 function scoreNormal (frame) {
     const frameScore = frame[0] + frame[1]
     return frameScore
@@ -35,6 +33,14 @@ function scoreDoubleStrike (frame, nextFrame, thirdFrame) {
     }
 }
 
-function scoreGame () {
+function scoreGame (score) {
 
+    let gameScore = 0
+
+    for (i = 0; i < score.length; i++) {
+        if (score[i][0] + score[i][1] < 10) {
+            gameScore += scoreNormal(score[i])   
+        }
+    } return gameScore
 }
+    
