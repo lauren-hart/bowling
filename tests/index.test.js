@@ -77,8 +77,8 @@ test('scores a double strike', function() {
 test('score the whole game', function() {
     //assert
     //const score = [[1, 2], [6, 4], [5, 4], [10, 0], [7, 2], [10, 0], [10, 0], [5, 2], [7, 0], [4, 4]]
-    const score = [[1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2]]
-    const expected = 30
+    const score = [[10, 0], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2], [1, 2]]
+    const expected = 40
     //act
     const actual = game.scoreGame(score)
     //assert

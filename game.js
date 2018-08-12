@@ -38,7 +38,10 @@ function scoreGame (score) {
     let gameScore = 0
 
     for (i = 0; i < score.length; i++) {
-        if (score[i][0] + score[i][1] < 10) {
+        if (score[i][0] === 10) {
+            gameScore += scoreStrike(score[i], score[i + 1])
+        }
+        else if (score[i][0] + score[i][1] < 10) {
             gameScore += scoreNormal(score[i])   
         }
     } return gameScore
